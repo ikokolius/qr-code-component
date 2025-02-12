@@ -41,6 +41,7 @@ main {
   padding: 16px;
   text-align: center;
   width: 320px;
+  box-shadow: 0 25px 25px rgb(0 0 0 / 4.77%);
 
   img {
     margin-bottom: var(--spacing-300);
