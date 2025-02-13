@@ -66,7 +66,7 @@ body {
 
 ## Author
 
-- LinkedIn - [Iryna Kokolius](www.linkedin.com/in/iryna-kokolius)
+- LinkedIn - [Iryna Kokolius](https://linkedin.com/in/iryna-kokolius)
 
 ## Acknowledgments
 
