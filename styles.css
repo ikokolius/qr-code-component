@@ -1,74 +1,71 @@
 :root {
-  --blue: hsl(228, 45%, 44%);
-  --slate-300: hsl(212, 45%, 89%);
-  --slate-500: hsl(216, 15%, 48%);
-  --slate-900: hsl(218, 44%, 22%);
-  --white: hsl(0, 0%, 100%);
-
-  --spacing-200: 16px;
-  --spacing-300: 24px;
+  /* Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-slate-300: hsl(212, 45%, 89%);
+  --color-slate-500: hsl(216, 15%, 48%);
+  --color-slate-900: hsl(218, 44%, 22%);
+  /* Spacing */
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-500: 2.5rem;
+  /* Typography */
+  --text-preset-1: 1.375rem;
+  --text-preset-2: 0.9375rem;
+  /* Other */
+  --border-radius-md: 0.625rem;
+  --border-radius-lg: 1.25rem;
 }
 
+/* Reset Start */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  align-items: center;
-  background-color: var(--slate-300);
-  display: flex;
-  flex-direction: column;
-  font-family: Outfit, sans-serif;
-  min-height: 100vh;
+img {
+  display: block;
+  max-width: 100%;
 }
+/* Reset End */
 
+body,
 main {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
+  display: grid;
+  place-items: center;
 }
 
-.card {
-  background-color: var(--white);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  font-size: 15px;
-  padding: 16px;
+body {
+  font-family: Outfit, sans-serif;
+  background: var(--color-slate-300);
+  height: 100vh;
+}
+
+.qr-card {
+  background: var(--color-white);
+  width: min(20rem, calc(100% - 2rem));
+  padding: var(--spacing-200) var(--spacing-200) var(--spacing-500);
   text-align: center;
-  width: 320px;
-  box-shadow: 0 25px 25px rgb(0 0 0 / 4.77%);
+  font-size: var(--text-preset-2);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 1.5625rem 1.5625rem rgb(0 0 0 / 4.77%);
 
   img {
     margin-bottom: var(--spacing-300);
-    border-radius: 10px;
+    border-radius: var(--border-radius-md);
   }
 
   h2 {
-    color: var(--slate-900);
-    font-size: 22px;
+    color: var(--color-slate-900);
+    font-size: var(--text-preset-1);
+    font-weight: bold;
     line-height: 1.2;
     margin-bottom: var(--spacing-200);
   }
 
   p {
-    color: var(--slate-500);
-    letter-spacing: 0.2;
+    color: var(--color-slate-500);
+    letter-spacing: 0.2px;
     line-height: 1.4;
-    margin-bottom: var(--spacing-300);
-  }
-}
-
-footer {
-  font-size: 11px;
-  text-align: center;
-  margin-top: auto;
-
-  a {
-    color: var(--blue);
   }
 }

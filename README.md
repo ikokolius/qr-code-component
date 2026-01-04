@@ -29,45 +29,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Built with
 
 - CSS custom properties
-- Flexbox
-
-### What I learned
-
-I learned centering the card with Flexbox, while maintaining the attribution div on the bottom of the page. The trick is to use auto margin and a wrapper on the card that takes up the available space, allowing justify-content: center; to work correctly.
-
-```html
-<body>
-  <div class="wrapper">
-    <div class="card"></div>
-  </div>
-  <div class="attribution"></div>
-</body>
-```
-
-```css
-body {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.wrapper {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
-}
-.attribution {
-  margin-top: auto;
-}
-```
+- Grid
 
 ## Author
 
 - LinkedIn - [Iryna Kokolius](https://linkedin.com/in/iryna-kokolius)
-
-## Acknowledgments
-
-ChatGPT helped me with finding solution on centering my card :-)
